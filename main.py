@@ -129,7 +129,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="CS 420/CS 527: Neuroevolution")
     parser.add_argument("--border_type", type=str, help="Type of border", default=None)
-    parser.add_argument("--dist_type", type=str, help="Type of distance", default=None)
+    parser.add_argument("--dist_type", type=str, help="Type of distance", default='euclid')
     parser.add_argument("--sleep", type=float, help="Duration of sleep", default=0.05)
     parser.add_argument("--max_iter", type=float, help="Maximum number of iterations", default=5000)
     parser.add_argument("--save_fn", type=str, help="Filename to save final state to", default=None)
