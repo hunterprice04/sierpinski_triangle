@@ -72,7 +72,7 @@ def calculate_halfway(p1, p2, dist_type='euclid'):
         return point
     else:
         vector = p2-p1
-        point = p1+(vector/1.001)
+        point = p1+(vector/1.5)
         return point
 
 
